@@ -1,0 +1,25 @@
+
+
+body{background-color: Lightblue;}
+tr{background-color: silver;}
+h1{background-color: silver;}
+h1{color: purple;}
+h2{color: purple;}
+h3{color: purple;}
+table{color:maroon;}
+h4{color:purple;}
+li{color:maroon;}
+table, th, td {border: 1px solid black;}
+li{border-style: solid;}
+h1{font-family: "Lucida Handwriting";}
+h2{font-family: "Lucida Handwriting";}
+img{border-radius: 50px;}
+img{opacity: 0.7;}
+img { display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;}
+#fotbal{color:maroon;}	 
+#condus{color:maroon;} 
+	  
+

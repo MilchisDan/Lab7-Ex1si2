@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pagina personala laborator 5</title>
+<link rel="stylesheet" href="mystyle.css">
+
+</head>
+<script>
+function myFunction() {
+  document.getElementById("fotbal").innerHTML = "Internship";
+  document.getElementById("condus").innerHTML = "Voluntariat";
+  document.getElementById("bodybuilding").innerHTML = "Sa lucrez in domeniu";
+  document.getElementById("nume").innerHTML = "Ing. Milchis Dan";
+  document.getElementById('poza').src='MilchisDan.2.jpeg';
+  document.body.style.background="grey";
+  document.getElementById("nume").style.fontFamily="Courier New";
+  document.getElementById("poza").style.opacity = "0.7";
+  document.getElementById("poza").style.border = "thin dotted red"; 
+}
+
+function arVarst() {
+  var azi = new Date;
+var varstMea;
+
+var anNasc = document.getElementById("varsta").innerHTML;
+varstMea = azi.getFullYear()- parseInt(anNasc);
+document.getElementById("varsta").innerHTML = varstMea;
+}
+
+</script>
+<body>
+<h1 id="nume">Milchis Dan-Ioan</h1>
+<h2>danut_im@yahoo.com</h2>
+<img id="poza" src="MilchisDan.poza.jpeg" alt="Poza Bontida" width="200" height="1000">
+<button type="button" onclick="myFunction()">Alta viata</button>
+<h5 onmouseover = "arVarst()" id="varsta">2002</h5>
+
+
+
+<h3>“Inteligenta plus caracterul este scopul adevaratei educatii.”</h3>
+<p></p>
+<table>
+  <tr>
+    <th>Materie</th>
+    <th>Anul</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>Informatica Aplicata</td>
+    <td>Anul I</td>
+    <td><a href=https://etti.utcluj.ro/files/FiseDisciplina/TstRo/06.pdf>IA</a></td>
+  </tr>
+  <tr>
+    <td>Componente si circuite pasive</td>
+    <td>Anul I</td>
+    <td><a href=https://etti.utcluj.ro/files/FiseDisciplina/TstRo/05.pdf>CCEP</a></td>
+  </tr>
+  <tr>
+    <td>Programarea calculatoarelor și limbaje de programare I</td>
+    <td>Anul I</td>
+    <td><a href=https://etti.utcluj.ro/files/FiseDisciplina/TstRo/04.pdf>PROGR I</a></td>
+  </tr>
+  <tr>
+    <td>Analiza Matematica</td>
+    <td>Anul I</td>
+    <td><a href=https://etti.utcluj.ro/files/FiseDisciplina/TstRo/01.pdf>AM</a></td>
+  </tr>
+</table>
+<h4>Lista Hobby-uri</h4>
+
+<ul>
+  <li id="bodybuilding">bodybuilding </li>
+  <li id="fotbal">fotbal</li>
+  <li id="condus">condus</li>
+</ul>  
+
+</body>
+</html> 
